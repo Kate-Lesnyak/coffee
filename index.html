@@ -3,12 +3,525 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" href="./assets/images/beans.ico" />
     <title>Coffee</title>
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header section">
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="logo"
+            ><img src="./assets/images/logo/logo-desktop.png" alt="Logo"
+          /></a>
+          <ul class="menu-list">
+            <li class="menu-item"><a href="/">Home</a></li>
+            <li class="menu-item"><a href="#menu">Menu</a></li>
+            <li class="menu-item"><a href="#about">About Us</a></li>
+            <li class="menu-item"><a href="#contact">Contact Us</a></li>
+          </ul>
+
+          <ul class="authorization-list">
+            <li class="authorization-item btn"><a href="#">Sign In</a></li>
+            <li class="authorization-item btn"><a href="#">SingUp</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Section Hero -->
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-title">We’ve got your morning covered with</h1>
+          <img
+            src="./assets/images/hero/coffee-title-desktop.png"
+            alt="Word 'Coffee'"
+            width="450"
+            height="290"
+          />
+          <p class="hero-text">
+            It is best to start your day with a cup of coffee. Discover the best
+            flavours coffee you will ever have. We provide the best for our
+            customers.
+          </p>
+          <button type="button" class="btn">Order Now</button>
+        </div>
+      </section>
+
+      <!-- Section Discover -->
+      <section class="discover section">
+        <div class="discover-container container">
+          <div class="discover-content">
+            <h2 class="discover-title section-title">
+              Discover the best coffee
+            </h2>
+            <p class="discover-text section-subtitle">
+              Bean Scene is a coffee shop that provides you with quality coffee
+              that helps boost your productivity and helps build your mood.
+              Having a cup of coffee is good, but having a cup of real coffee is
+              greater. There is no doubt that you will enjoy this coffee more
+              than others you have ever tasted.
+            </p>
+            <button type="button" class="btn">Learn More</button>
+          </div>
+          <div class="img-thumb">
+            <img
+              src="./assets/images/discover/cup-coffee-desktop.jpg"
+              alt="Cup from beans"
+              width="680"
+              height="476"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Enjoy -->
+      <section class="enjoy section">
+        <div class="enjoy-container container">
+          <h2 class="enjoy-title section-title">
+            Enjoy a new blend of coffee style
+          </h2>
+          <p class="section-subtitle">
+            Explore all flavours of coffee with us. There is always a new cup
+            worth experiencing
+          </p>
+          <ul class="enjoy-list">
+            <li class="enjoy-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/enjoy/cup-01.jpg"
+                    alt="Cup of cappuccino"
+                    width="280"
+                    height="220"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Cappuccino</h3>
+                  <p class="description">Coffee 50% | Milk 50%</p>
+                  <p class="price">$8.50</p>
+                  <button type="button" class="enjoy-btn btn">Order Now</button>
+                </div>
+              </div>
+            </li>
+            <li class="enjoy-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/enjoy/cup-02.jpg"
+                    alt="Cup of Chai Latte"
+                    width="280"
+                    height="220"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Chai Latte</h3>
+                  <p class="description">Coffee 50% | Milk 50%</p>
+                  <p class="price">$8.50</p>
+                  <button type="button" class="enjoy-btn btn">Order Now</button>
+                </div>
+              </div>
+            </li>
+            <li class="enjoy-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/enjoy/cup-03.jpg"
+                    alt="Cup of Macchiato"
+                    width="280"
+                    height="220"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Macchiato</h3>
+                  <p class="description">Coffee 50% | Milk 50%</p>
+                  <p class="price">$8.50</p>
+                  <button type="button" class="enjoy-btn btn">Order Now</button>
+                </div>
+              </div>
+            </li>
+            <li class="enjoy-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/enjoy/cup-04.jpg"
+                    alt="Cup of Expresso"
+                    width="280"
+                    height="220"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Expresso</h3>
+                  <p class="description">Coffee 50% | Milk 50%</p>
+                  <p class="price">$8.50</p>
+                  <button type="button" class="enjoy-btn btn">Order Now</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="enjoy-blast">
+            <img
+              src="./assets/images//enjoy/coffee_blast-left-desktop.png"
+              alt="Blast"
+              width="400"
+              height="272"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Different -->
+      <section class="different section">
+        <div class="different-container container">
+          <h2 class="different-title section-title">Why are we different?</h2>
+          <p class="section-subtitle">
+            We don’t just make your coffee, we make your day!
+          </p>
+          <ul class="different-list">
+            <li class="different-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/different/beans-desktop.png"
+                    alt="Beans"
+                    width="88"
+                    height="88"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Supreme Beans</h3>
+                  <p class="description">Beans that provides great taste</p>
+                </div>
+              </div>
+            </li>
+            <li class="different-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/different/badge-desktop.png"
+                    alt="Badge"
+                    width="88"
+                    height="88"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">High Quality</h3>
+                  <p class="description">We provide the highest quality</p>
+                </div>
+              </div>
+            </li>
+            <li class="different-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/different/coffee-desktop.png"
+                    alt="Cup of coffee"
+                    width="88"
+                    height="88"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Extraordinary</h3>
+                  <p class="description">Coffee like you have never tasted</p>
+                </div>
+              </div>
+            </li>
+            <li class="different-item">
+              <div class="card">
+                <div class="img-thumb">
+                  <img
+                    src="./assets/images/different/price-desktop.png"
+                    alt="Price"
+                    width="88"
+                    height="88"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="subtitle">Affordable Price</h3>
+                  <p class="description">
+                    Our Coffee prices are easy to afford
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <p class="different-text">
+            Great ideas start with great coffee, Lets help you achieve that
+          </p>
+          <p class="different-text-large">Get started today.</p>
+          <button type="button" class="different-btn btn">Join Us</button>
+          <div class="different-blast">
+            <img
+              src="./assets/images/different/coffee_blast-right-desktop.png"
+              alt="Blast"
+              width="400"
+              height="260"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Chance -->
+      <section class="chance-section section">
+        <div class="chance-container container">
+          <h2 class="chance-title section-title light">
+            Get a chance to have an Amazing morning
+          </h2>
+          <p class="chance-subtitle section-subtitle light">
+            We are giving you are one time opportunity to experience a better
+            life with coffee.
+          </p>
+          <button type="button" class="chace-btn btn">Order Now</button>
+        </div>
+      </section>
+
+      <!-- Section Feeback -->
+      <section class="feedback-section section">
+        <div class="feedback-container container">
+          <h2 class="feedback-title section-title">
+            Our coffee perfection feedback
+          </h2>
+          <p class="section-subtitle">
+            Our customers has amazing things to say about us
+          </p>
+          <div class="feedback-content">
+            <div class="img-thumb-quotes">
+              <img
+                src="./assets/images/feedback/“.png"
+                alt=""
+                width="90"
+                height="90"
+              />
+            </div>
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset.....
+            </p>
+            <p class="user">Jonny Thomas</p>
+            <p class="job-title">Project Manager</p>
+            <div class="user-photo">
+              <img
+                src="./assets/images/feedback/jonny.png"
+                alt="Jonny Thomas"
+                width="112"
+                height="112"
+              />
+            </div>
+            <button class="arrow-container arrow-left" tabindex="0">
+              <svg class="icon-arrow-left" width="24" height="24">
+                <use href="./assets/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="arrow-container arrow-right" tabindex="0">
+              <svg class="icon-arrow-right" width="24" height="24">
+                <use href="./assets/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="feedback-blaste-left">
+            <img
+              src="./assets/images/feedback/coffee_blast-left-desktop.png"
+              alt=""
+              width="414"
+              height="226"
+            />
+          </div>
+          <div class="feedback-blaste-right">
+            <img
+              src="./assets/images/feedback/coffee_blast-right-desktop.png"
+              alt=""
+              width="498"
+              height="272"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Subscribe -->
+      <section class="subscribe-section section">
+        <div class="subscribe-container container">
+          <h2 class="subscribe-title section-title light">
+            Subscribe to get the Latest News
+          </h2>
+          <p class="subscribe-subtitle section-subtitle light">
+            Don’t miss out on our latest news, updates, tips and special offers
+          </p>
+
+          <form class="subscribe-form">
+            <label>
+              <input type="email" name="email" placeholder="Enter your mail" />
+            </label>
+            <button class="subscribe-btn btn">Subscribe</button>
+          </form>
+          <div class="cup-left">
+            <img
+              src="./assets/images/subscribe/cup-left-desktop.png"
+              alt=""
+              width="350"
+            />
+          </div>
+          <div class="cup-right">
+            <img
+              src="./assets/images/subscribe/cup-right-desktop.png"
+              alt=""
+              width="350"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-content">
+          <a class="logo" href="/">
+            <img
+              src="./assets/images/logo/logo-footer-desktop.png"
+              alt="Logo"
+              width="207"
+              height="71"
+            />
+          </a>
+          <p class="footer-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <ul class="footer-social-links-list">
+            <li class="footer-social-links-item">
+              <a
+                class="social-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On Facebook"
+              >
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-links-item">
+              <a
+                class="social-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On Instagram"
+              >
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-links-item">
+              <a
+                class="social-link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On Youtube"
+              >
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-links-item">
+              <a
+                class="social-link"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On Twitter"
+              >
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <h3 class="footer-subtitle about">About</h3>
+          <ul class="footer-about-list">
+            <li class="footer-about-item"><a href="#menu">Menu</a></li>
+            <li class="footer-about-item"><a href="#">Features</a></li>
+            <li class="footer-about-item"><a href="#">News & Blogs</a></li>
+            <li class="footer-about-item"><a href="#">Help & Supports</a></li>
+          </ul>
+        </div>
+        <div class="footer-company">
+          <h3 class="footer-subtitle company">Company</h3>
+          <ul class="footer-company-list">
+            <li class="footer-company-item"><a href="#">How we work</a></li>
+            <li class="footer-company-item">
+              <a href="#">Terms of service</a>
+            </li>
+            <li class="footer-company-item"><a href="#">Pricing</a></li>
+            <li class="footer-company-item"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3 class="footer-subtitle">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+              Bangalore-560016
+            </li>
+            <li class="footer-contact-item">
+              <a
+                href="tel:+12029182132"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On phone"
+                >+1 202-918-2132</a
+              >
+            </li>
+            <li class="footer-contact-item">
+              <a
+                href="mailto:beanscene@mail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow Us On Email"
+                >beanscene@mail.com</a
+              >
+            </li>
+            <li class="footer-contact-item">
+              <a
+                href="https://www.beanscene.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us On website"
+                >www.beanscene.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
